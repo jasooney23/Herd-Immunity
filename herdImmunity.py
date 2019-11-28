@@ -21,6 +21,8 @@ simulation = []
 vaxx = []
 
 #---------------#
+# EDIT THESE VARIABLES
+
 size = 10
 immunity = 50
 contagion = 50
@@ -88,7 +90,6 @@ def infect(infectious):
                         try:
                             if vaxx[q][p] != True:
                                 if random.randint(1, 100) <= infectious:
-                                    print("infecting ({0}, {1}) from ({2}, {3})".format(p, q, x, y))
                                     simulation[q][p] = True
                         except:
                             pass
